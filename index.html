@@ -128,8 +128,7 @@
                 id="resume-link-1"
                 href="./Kumar-Rohan-Resume.pdf"
                 download
-                >Resume</a
-              >
+              >Resume</a>
             </li>
           </ul>
         </div>
@@ -988,6 +987,20 @@
 
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script>
+  document.addEventListener('DOMContentLoaded', function () {
+      // Get the Resume link element
+      var resumeLink = document.getElementById('resume-link-1');
+
+      // Add click event listener
+      resumeLink.addEventListener('click', function (event) {
+        // Prevent the default behavior of the link
+        event.preventDefault();
+
+        // Open the link in a new tab
+        window.open(resumeLink.getAttribute('href'), '_blank');
+      });
+    });
+
   GitHubCalendar(".calendar", "rohansah29");
 
 // or enable responsive functionality:
