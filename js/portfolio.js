@@ -48,11 +48,6 @@ document.querySelectorAll(".reveal").forEach((item) => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const resumeLink = document.getElementById("resume-link-1");
-resumeLink.addEventListener("click", (event) => {
-  event.preventDefault();
-  window.open(resumeLink.getAttribute("href"), "_blank");
-});
 
 if (window.GitHubCalendar) {
   GitHubCalendar(".calendar", "rohansah29", { responsive: true });
