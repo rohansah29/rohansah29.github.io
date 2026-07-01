@@ -164,18 +164,19 @@ document.querySelectorAll(".chat-chip").forEach((chip) => {
 
 function openAndDownload(e) {
   e.preventDefault();
+  e.stopPropagation();
 
   const url = "./Kumar_Rohan_CV.pdf";
 
-  // Open in new tab
   window.open(url, "_blank");
 
-  // Trigger download
   const link = document.createElement("a");
   link.href = url;
   link.download = "Kumar_Rohan_Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+
+  return false;
 }
 

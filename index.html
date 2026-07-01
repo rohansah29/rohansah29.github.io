@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -61,8 +61,7 @@
               class="resume-pill nav-link resume"
               id="resume-link-1"
               href="#"
-              rel="noreferrer"
-              onclick="openAndDownload(event)"
+              onclick="return openAndDownload(event);"
             >
               <i class="bi bi-download"></i>
               Resume
@@ -80,26 +79,24 @@
               <span class="status-dot"></span>
               Available for full stack roles
             </div>
-            <h1 class="reveal">Full Stack Developer <span>building product-ready apps.</span></h1>
+            <h1 class="reveal">
+              Full Stack Developer <span>building product-ready apps.</span>
+            </h1>
             <p class="hero-copy reveal" id="user-detail-intro">
-              I am Kumar Rohan, a JavaScript-focused full stack developer with 2.5+
-              years of hands-on project experience across React, Node.js, Express
-              and MongoDB. I turn business ideas into clean interfaces, reliable
-              APIs and deployable web products.
+              I am Kumar Rohan, a JavaScript-focused full stack developer with
+              2.5+ years of hands-on project experience across React, Node.js,
+              Express and MongoDB. I turn business ideas into clean interfaces,
+              reliable APIs and deployable web products.
             </p>
             <div class="hero-actions reveal">
               <a class="primary-btn" href="#blog">
                 <i class="bi bi-window-stack"></i>
                 View Projects
               </a>
-              <a href="#" class="secondary-btn" onclick="openAndDownload(event)">
-                <i class="bi bi-download"></i>
-                Download Resume
-              </a>
               <a
+                href="#"
                 class="secondary-btn"
-                href="./Kumar_Rohan_CV.pdf"
-                download
+                onclick="openAndDownload(event)"
               >
                 <i class="bi bi-download"></i>
                 Download Resume
@@ -140,7 +137,10 @@
               <p>Full Stack Developer | React | Node.js | MongoDB</p>
               <div class="quick-list">
                 <div><i class="bi bi-geo-alt"></i> Bhagalpur, Bihar</div>
-                <div><i class="bi bi-telephone"></i> <span id="contact-phone">+91 7992438393</span></div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  <span id="contact-phone">+91 7992438393</span>
+                </div>
                 <div><i class="bi bi-github"></i> github.com/rohansah29</div>
               </div>
             </div>
@@ -152,19 +152,30 @@
         <div class="container about-grid">
           <div class="about-card reveal">
             <p class="section-eyebrow">About</p>
-            <h2 class="section-title">Practical engineer with a product mindset.</h2>
+            <h2 class="section-title">
+              Practical engineer with a product mindset.
+            </h2>
             <div class="about-list">
               <div>
                 <strong>Frontend</strong>
-                <span>Responsive React interfaces, state management, reusable components.</span>
+                <span
+                  >Responsive React interfaces, state management, reusable
+                  components.</span
+                >
               </div>
               <div>
                 <strong>Backend</strong>
-                <span>REST APIs, authentication flows, MongoDB schemas and Express services.</span>
+                <span
+                  >REST APIs, authentication flows, MongoDB schemas and Express
+                  services.</span
+                >
               </div>
               <div>
                 <strong>Delivery</strong>
-                <span>Git workflow, deployment, debugging, collaboration and ownership.</span>
+                <span
+                  >Git workflow, deployment, debugging, collaboration and
+                  ownership.</span
+                >
               </div>
             </div>
           </div>
@@ -179,15 +190,25 @@
             <div class="timeline">
               <div class="timeline-item">
                 <strong>Frontend ownership</strong>
-                <span>Designed responsive pages, forms, protected routes and state-driven interfaces using React, Redux and Chakra UI.</span>
+                <span
+                  >Designed responsive pages, forms, protected routes and
+                  state-driven interfaces using React, Redux and Chakra
+                  UI.</span
+                >
               </div>
               <div class="timeline-item">
                 <strong>Backend implementation</strong>
-                <span>Created Express APIs, connected MongoDB models and handled authentication-ready application flows.</span>
+                <span
+                  >Created Express APIs, connected MongoDB models and handled
+                  authentication-ready application flows.</span
+                >
               </div>
               <div class="timeline-item">
                 <strong>Team-ready habits</strong>
-                <span>Comfortable with Git, code reviews, deployment checks and communicating tradeoffs clearly.</span>
+                <span
+                  >Comfortable with Git, code reviews, deployment checks and
+                  communicating tradeoffs clearly.</span
+                >
               </div>
             </div>
           </div>
@@ -199,15 +220,21 @@
           <div class="experience-head">
             <div>
               <p class="section-eyebrow">Experience</p>
-              <h2 class="section-title">Production ownership across fintech platforms.</h2>
+              <h2 class="section-title">
+                Production ownership across fintech platforms.
+              </h2>
             </div>
             <p class="section-copy">
               Currently building compliant, partner-ready credit card platforms
-              with React, TypeScript, Node.js, Express, MySQL and CI/CD workflows.
+              with React, TypeScript, Node.js, Express, MySQL and CI/CD
+              workflows.
             </p>
           </div>
 
-          <div class="impact-strip reveal" aria-label="Experience impact metrics">
+          <div
+            class="impact-strip reveal"
+            aria-label="Experience impact metrics"
+          >
             <div>
               <strong>40%</strong>
               <span>Frontend performance improvement</span>
@@ -252,7 +279,8 @@
                     <p>
                       Owned end-to-end frontend development for a Co-branded
                       Credit Card platform, from system design and development
-                      to testing and production deployment with Product Managers.
+                      to testing and production deployment with Product
+                      Managers.
                     </p>
                   </div>
                   <div class="role-point">
@@ -267,8 +295,8 @@
                     <i class="bi bi-diagram-3"></i>
                     <p>
                       Contributed to modular, compliant credit solutions for AU
-                      Bank, Yes Bank, Federal Bank and NCB, with integrations for
-                      Flipkart, Ixigo and Cheq.
+                      Bank, Yes Bank, Federal Bank and NCB, with integrations
+                      for Flipkart, Ixigo and Cheq.
                     </p>
                   </div>
                   <div class="role-point">
@@ -356,14 +384,19 @@
               <h2 class="section-title">Projects written like case studies.</h2>
             </div>
             <p class="section-copy">
-              Each project highlights ownership, product thinking and stack depth
-              instead of only showing screenshots.
+              Each project highlights ownership, product thinking and stack
+              depth instead of only showing screenshots.
             </p>
           </div>
 
           <div class="project-grid">
             <article class="project-card reveal">
-              <a class="project-media" href="https://tunewaves.vercel.app/" target="_blank" rel="noreferrer">
+              <a
+                class="project-media"
+                href="https://tunewaves.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="https://user-images.githubusercontent.com/119648587/263640298-2bf5132e-c63f-4888-a817-f9fafd5ae748.png"
                   alt="TuneWaves music platform screenshot"
@@ -374,17 +407,28 @@
                 <h3 class="project-title">TuneWaves</h3>
                 <p class="project-description">
                   Full stack music discovery app focused on browsing, content
-                  structure and polished user journeys. Built the React interface,
-                  server routes and MongoDB-backed data flow.
+                  structure and polished user journeys. Built the React
+                  interface, server routes and MongoDB-backed data flow.
                 </p>
                 <p class="project-tech-stack">
-                  <span>React</span><span>CSS</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+                  <span>React</span><span>CSS</span><span>Node.js</span
+                  ><span>Express</span><span>MongoDB</span>
                 </p>
                 <div class="project-links">
-                  <a class="icon-link project-github-link" href="https://github.com/rohansah29/shocking-grade-9442" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-github-link"
+                    href="https://github.com/rohansah29/shocking-grade-9442"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a class="icon-link project-deployed-link" href="https://tunewaves.vercel.app/" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-deployed-link"
+                    href="https://tunewaves.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-box-arrow-up-right"></i> Live
                   </a>
                 </div>
@@ -392,7 +436,12 @@
             </article>
 
             <article class="project-card reveal">
-              <a class="project-media" href="https://money-mentor.netlify.app/" target="_blank" rel="noreferrer">
+              <a
+                class="project-media"
+                href="https://money-mentor.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="https://user-images.githubusercontent.com/119648587/272847214-103aa658-2d9e-43cc-81b6-7681724fc313.png"
                   alt="Money Mentor lending app screenshot"
@@ -403,16 +452,28 @@
                 <h3 class="project-title">Money Mentor</h3>
                 <p class="project-description">
                   Loan discovery interface with structured product pages, clear
-                  application flows and reusable UI patterns for financial content.
+                  application flows and reusable UI patterns for financial
+                  content.
                 </p>
                 <p class="project-tech-stack">
-                  <span>React</span><span>Redux</span><span>Chakra UI</span><span>CSS</span><span>Node.js</span>
+                  <span>React</span><span>Redux</span><span>Chakra UI</span
+                  ><span>CSS</span><span>Node.js</span>
                 </p>
                 <div class="project-links">
-                  <a class="icon-link project-github-link" href="https://github.com/rohansah29/vogue-pocket-8479" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-github-link"
+                    href="https://github.com/rohansah29/vogue-pocket-8479"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a class="icon-link project-deployed-link" href="https://money-mentor.netlify.app/" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-deployed-link"
+                    href="https://money-mentor.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-box-arrow-up-right"></i> Live
                   </a>
                 </div>
@@ -420,7 +481,12 @@
             </article>
 
             <article class="project-card reveal">
-              <a class="project-media" href="https://mixmastergear.netlify.app/" target="_blank" rel="noreferrer">
+              <a
+                class="project-media"
+                href="https://mixmastergear.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="https://user-images.githubusercontent.com/119648587/250920725-57a9ca1d-9598-4979-91fd-78a3dec7f01f.png"
                   alt="MixMasterGear ecommerce screenshot"
@@ -434,13 +500,24 @@
                   product details and purchase-oriented UI decisions.
                 </p>
                 <p class="project-tech-stack">
-                  <span>React</span><span>JavaScript</span><span>Chakra UI</span><span>CSS</span><span>Node.js</span>
+                  <span>React</span><span>JavaScript</span><span>Chakra UI</span
+                  ><span>CSS</span><span>Node.js</span>
                 </p>
                 <div class="project-links">
-                  <a class="icon-link project-github-link" href="https://github.com/rohansah29/nutty-form-5506" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-github-link"
+                    href="https://github.com/rohansah29/nutty-form-5506"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a class="icon-link project-deployed-link" href="https://mixmastergear.netlify.app/" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-deployed-link"
+                    href="https://mixmastergear.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-box-arrow-up-right"></i> Live
                   </a>
                 </div>
@@ -448,7 +525,12 @@
             </article>
 
             <article class="project-card reveal">
-              <a class="project-media" href="https://effulgent-begonia-1f2a49.netlify.app/" target="_blank" rel="noreferrer">
+              <a
+                class="project-media"
+                href="https://effulgent-begonia-1f2a49.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="https://user-images.githubusercontent.com/117287131/221493049-f2750e5c-c784-4378-b549-038a18cb32d9.png"
                   alt="Gent's Hub menswear ecommerce screenshot"
@@ -459,16 +541,27 @@
                 <h3 class="project-title">Gent's Hub</h3>
                 <p class="project-description">
                   Men's fashion ecommerce site with category browsing, product
-                  presentation and responsive layouts built with core web skills.
+                  presentation and responsive layouts built with core web
+                  skills.
                 </p>
                 <p class="project-tech-stack">
                   <span>HTML</span><span>CSS</span><span>JavaScript</span>
                 </p>
                 <div class="project-links">
-                  <a class="icon-link project-github-link" href="https://github.com/rohansah29/sensitive-government-8954-" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-github-link"
+                    href="https://github.com/rohansah29/sensitive-government-8954-"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a class="icon-link project-deployed-link" href="https://effulgent-begonia-1f2a49.netlify.app/" target="_blank" rel="noreferrer">
+                  <a
+                    class="icon-link project-deployed-link"
+                    href="https://effulgent-begonia-1f2a49.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="bi bi-box-arrow-up-right"></i> Live
                   </a>
                 </div>
@@ -483,7 +576,9 @@
           <div class="skills-head">
             <div>
               <p class="section-eyebrow">Technical Stack</p>
-              <h2 class="section-title">Tools I use to ship complete products.</h2>
+              <h2 class="section-title">
+                Tools I use to ship complete products.
+              </h2>
             </div>
             <p class="section-copy">
               A focused stack around frontend delivery, backend APIs, databases
@@ -495,30 +590,114 @@
             <div class="skill-column reveal">
               <h3>Frontend</h3>
               <div class="skill-list">
-                <div class="skills-card"><img class="skills-card-img" src="./Skills_Logo/html.logo.png" alt="" /><p class="skills-card-name">HTML5</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="./Skills_Logo/css.logo.png" alt="" /><p class="skills-card-name">CSS3</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="./Skills_Logo/javascript.logo.png" alt="" /><p class="skills-card-name">JavaScript</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="https://rohansah29.github.io/My-portfolio/react.png" alt="" /><p class="skills-card-name">React.js</p></div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="./Skills_Logo/html.logo.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">HTML5</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="./Skills_Logo/css.logo.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">CSS3</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="./Skills_Logo/javascript.logo.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">JavaScript</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="https://rohansah29.github.io/My-portfolio/react.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">React.js</p>
+                </div>
               </div>
             </div>
 
             <div class="skill-column reveal">
               <h3>Backend</h3>
               <div class="skill-list">
-                <div class="skills-card"><img class="skills-card-img" src="https://deepakchourasiya-aj.github.io/imgage/nodejs.png" alt="" /><p class="skills-card-name">Node.js</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="" /><p class="skills-card-name">Express.js</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="https://deepakchourasiya-aj.github.io/imgage/mongodb.png" alt="" /><p class="skills-card-name">MongoDB</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="./Skills_Logo/mysql.logo.png" alt="" /><p class="skills-card-name">MySQL</p></div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="https://deepakchourasiya-aj.github.io/imgage/nodejs.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">Node.js</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">Express.js</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="https://deepakchourasiya-aj.github.io/imgage/mongodb.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">MongoDB</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="./Skills_Logo/mysql.logo.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">MySQL</p>
+                </div>
               </div>
             </div>
 
             <div class="skill-column reveal">
               <h3>Workflow</h3>
               <div class="skill-list">
-                <div class="skills-card"><img class="skills-card-img" src="./Skills_Logo/git.logo.png" alt="" /><p class="skills-card-name">Git</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /><p class="skills-card-name">GitHub</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="./Skills_Logo/vs code.logo.png" alt="" /><p class="skills-card-name">VS Code</p></div>
-                <div class="skills-card"><img class="skills-card-img" src="./Skills_Logo/aws.logo.png" alt="" /><p class="skills-card-name">AWS Basics</p></div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="./Skills_Logo/git.logo.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">Git</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">GitHub</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="./Skills_Logo/vs code.logo.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">VS Code</p>
+                </div>
+                <div class="skills-card">
+                  <img
+                    class="skills-card-img"
+                    src="./Skills_Logo/aws.logo.png"
+                    alt=""
+                  />
+                  <p class="skills-card-name">AWS Basics</p>
+                </div>
               </div>
             </div>
 
@@ -540,14 +719,18 @@
           <div class="github-head">
             <div>
               <p class="section-eyebrow">GitHub Activity</p>
-              <h2 class="section-title">Consistent practice, visible progress.</h2>
+              <h2 class="section-title">
+                Consistent practice, visible progress.
+              </h2>
             </div>
             <p class="section-copy">
               Contribution graph and language cards are pulled live from GitHub.
             </p>
           </div>
           <div class="github-card reveal" id="git_cal">
-            <div class="calendar react-activity-calendar">Loading GitHub activity...</div>
+            <div class="calendar react-activity-calendar">
+              Loading GitHub activity...
+            </div>
             <div class="github-stats" id="gitstats">
               <img
                 id="github-streak-stats"
@@ -584,7 +767,12 @@
                   <i class="bi bi-envelope"></i>
                   Send Email
                 </a>
-                <a class="secondary-btn" href="https://api.whatsapp.com/send?phone=917992438393&text=Hi%20Rohan" target="_blank" rel="noreferrer">
+                <a
+                  class="secondary-btn"
+                  href="https://api.whatsapp.com/send?phone=917992438393&text=Hi%20Rohan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i class="bi bi-whatsapp"></i>
                   WhatsApp
                 </a>
@@ -594,21 +782,44 @@
               <h3>Get in touch</h3>
               <div class="contact-links">
                 <div><i class="bi bi-geo-alt"></i> Bhagalpur, Bihar, India</div>
-                <a href="tel:+917992438393"><i class="bi bi-telephone"></i> +91 7992438393</a>
-                <a href="mailto:00rohansah00.kr@gmail.com"><i class="bi bi-envelope"></i> 00rohansah00.kr@gmail.com</a>
-                <a id="contact-linkedin" href="https://www.linkedin.com/in/kumar-rohan-915538214/" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                <a id="contact-github" href="https://github.com/rohansah29" target="_blank" rel="noreferrer"><i class="bi bi-github"></i> GitHub</a>
+                <a href="tel:+917992438393"
+                  ><i class="bi bi-telephone"></i> +91 7992438393</a
+                >
+                <a href="mailto:00rohansah00.kr@gmail.com"
+                  ><i class="bi bi-envelope"></i> 00rohansah00.kr@gmail.com</a
+                >
+                <a
+                  id="contact-linkedin"
+                  href="https://www.linkedin.com/in/kumar-rohan-915538214/"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="bi bi-linkedin"></i> LinkedIn</a
+                >
+                <a
+                  id="contact-github"
+                  href="https://github.com/rohansah29"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="bi bi-github"></i> GitHub</a
+                >
               </div>
             </div>
           </div>
           <footer>
-            <p>&copy; <span id="year"></span> Kumar Rohan. Built with HTML, CSS and JavaScript.</p>
+            <p>
+              &copy; <span id="year"></span> Kumar Rohan. Built with HTML, CSS
+              and JavaScript.
+            </p>
           </footer>
         </div>
       </section>
     </main>
 
-    <aside class="chatbot" id="portfolio-chatbot" aria-label="Rohan portfolio chatbot">
+    <aside
+      class="chatbot"
+      id="portfolio-chatbot"
+      aria-label="Rohan portfolio chatbot"
+    >
       <div class="chatbot-panel" role="dialog" aria-labelledby="chatbot-title">
         <div class="chatbot-header">
           <div>
@@ -619,12 +830,40 @@
             <i class="bi bi-x-lg"></i>
           </button>
         </div>
-        <div class="chatbot-messages" id="chatbot-messages" aria-live="polite"></div>
+        <div
+          class="chatbot-messages"
+          id="chatbot-messages"
+          aria-live="polite"
+        ></div>
         <div class="chat-suggestions" aria-label="Suggested questions">
-          <button class="chat-chip" type="button" data-question="Tell me about Rohan's experience">Experience</button>
-          <button class="chat-chip" type="button" data-question="What are Rohan's skills?">Skills</button>
-          <button class="chat-chip" type="button" data-question="Show Rohan's projects">Projects</button>
-          <button class="chat-chip" type="button" data-question="How can I contact Rohan?">Contact</button>
+          <button
+            class="chat-chip"
+            type="button"
+            data-question="Tell me about Rohan's experience"
+          >
+            Experience
+          </button>
+          <button
+            class="chat-chip"
+            type="button"
+            data-question="What are Rohan's skills?"
+          >
+            Skills
+          </button>
+          <button
+            class="chat-chip"
+            type="button"
+            data-question="Show Rohan's projects"
+          >
+            Projects
+          </button>
+          <button
+            class="chat-chip"
+            type="button"
+            data-question="How can I contact Rohan?"
+          >
+            Contact
+          </button>
         </div>
         <form class="chatbot-form" id="chatbot-form">
           <input
@@ -649,4 +888,3 @@
     <script src="./js/portfolio.js"></script>
   </body>
 </html>
-
